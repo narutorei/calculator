@@ -15,7 +15,7 @@ class Calculator {
             this->setOperand2(0);
         }
 
-        void Calculator(double op1, double, op2) {
+        void Calculator(double op1, double op2) {
             this->setOperand1(op1);
             this->setOperand2(op2);
         }
