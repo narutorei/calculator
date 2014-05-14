@@ -10,23 +10,25 @@ class Calculator {
 
     public:
 
-        void Calculator () {
+        Calculator () {
             this->setOperand1(0);
             this->setOperand2(0);
         }
 
-        void Calculator(double op1, double, op2) {
+        Calculator(double op1, double op2) {
             this->setOperand1(op1);
             this->setOperand2(op2);
         }
 
-        double Calculator(char op, double op1, double op2) {
-            this->setOperand1(op1);
-            this->setOperand2(op2);
+        static double calculator(char op, double op1, double op2) {
+            Calculator calc;
 
-            return this->getResultFrom(op);
+            calc.setOperand1(op1);
+            calc.setOperand2(op2);
+
+            return calc.getResultFrom(op);
         }
-
+        
         void setOperand1(double op) {
             this->operand1 = op;
         }
